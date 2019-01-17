@@ -1,0 +1,368 @@
+
+<Rags_Zeds_Ladders>
+
+<!---Ragsy2145 Ladder controls by entity class for maximum adjustability default is all "off".
+	If you want a particular zombie to be able to climb then just change value "CanClimbLadders"
+	to "true" Some zombies are missing from TFP code so they are commented out.
+	I think all are covered as far as i can see but feel free to let me know if they are not in the lists -->
+	
+	<append xpath="entity_classes/entity_class[@name='zombieTemplateMale']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieUtilityWorkerFeral']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieUtilityWorker']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+
+	<!-- Missing: From TFP Code on A17
+	<append xpath="entity_classes/entity_class[@name='zombieUtilityWorkerRadiated']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	-->
+	
+	<append xpath="entity_classes/entity_class[@name='zombieSoldierFeral']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieSoldierRadiated']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<!-- Throwing error in console for some reason? 
+	
+	<append xpath="entity_classes/entity_class[@name='zombieSoldier']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	-->
+	
+	
+	<append xpath="entity_classes/entity_class[@name='zombieSkateboarderFeral']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieSkateboarderRadiated']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieSkateboarder']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieCheerleaderFeral']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieCheerleader']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+		
+	<append xpath="entity_classes/entity_class[@name='zombieCheerleaderRadiated']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieOldTimerFeral']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieOldTimer']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieOldTimerRadiated']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieBikerFeral']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieBikerRadiated']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieBiker']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieFarmer']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieFarmerFeral']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<!-- Missing: From TFP Code on A17
+	<append xpath="entity_classes/entity_class[@name='zombieFarmerRadiated']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	-->
+		
+	<append xpath="entity_classes/entity_class[@name='zombieStripperFeral']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieStripper']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<!-- Missing: From TFP Code on A17
+	<append xpath="entity_classes/entity_class[@name='zombieStripperRadiated']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	-->
+
+	<append xpath="entity_classes/entity_class[@name='zombieBoe']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieBoeRadiated']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieBoeFeral']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieWightRadiated']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieWightFeral']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<!-- Missing: From TFP Code on A17
+	<append xpath="entity_classes/entity_class[@name='zombieWight']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	-->
+		
+	<append xpath="entity_classes/entity_class[@name='zombieFemaleFat']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieFemaleFatFeral']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieFemaleFatRadiated']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieJoeFeral']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieJoeRadiated']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieJoe']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieMoeFeral']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieMoeRadiated']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieMoe']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieArleneFeral']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieArleneRadiated']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieArlene']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+		
+	<append xpath="entity_classes/entity_class[@name='zombieLabFeral']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieLab']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieLabRadiated']">
+	<property name="CanClimbLadders" value="false"/>>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieScreamerFeral']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieScreamerRadiated']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieScreamer']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieDarleneFeral']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieDarleneRadiated']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieDarlene']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+		
+	<append xpath="entity_classes/entity_class[@name='zombieMarleneFeral']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieMarlene']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieMarleneRadiated']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieYoFeral']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieYoRadiated']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieYo']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieSteveFeral']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieSteveRadiated']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieSteveCrawler']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieSteveCrawlerFeral']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieSteve']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<!-- Missing: From TFP Code on A17
+	<append xpath="entity_classes/entity_class[@name='zombieSteveCrawlerRadiated']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	-->
+	
+	<append xpath="entity_classes/entity_class[@name='zombieBusinessManFeral']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<!-- Missing: From TFP Code on A17
+	<append xpath="entity_classes/entity_class[@name='zombieBusinessManRadiated']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	-->
+	
+	<append xpath="entity_classes/entity_class[@name='zombieBusinessMan']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieSnow']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieSnowFeral']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<!-- Missing: From TFP Code on A17
+	<append xpath="entity_classes/entity_class[@name='zombieSnowRadiated']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	-->
+		
+	<append xpath="entity_classes/entity_class[@name='zombieSpiderFeral']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieSpiderRadiated']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieSpider']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieNurseFeral']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieNurse']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<!-- Missing: From TFP Code on A17
+	<append xpath="entity_classes/entity_class[@name='zombieNurseRadiated']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	-->
+	
+	<append xpath="entity_classes/entity_class[@name='zombieFatHawaiianFeral']">
+	<property name="CanClimbLadders" value="false"/>>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieFatHawaiian']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<!-- Missing: From TFP Code on A17
+	<append xpath="entity_classes/entity_class[@name='zombieFatHawaiianRadiated']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	-->
+	
+	<append xpath="entity_classes/entity_class[@name='zombieFatCopFeral']">
+	<property name="CanClimbLadders" value="false"/>>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieFatCopRadiated']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieFatCop']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieMaleHazmat']">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	<!-- Also Missing From TFP Code on A17 are zombieMaleHazmatFeral and Radiated Versions
+	Also missing as expectedzombieBurntFeral and zombieBurntRadiated -->
+	
+	
+</Rags_Zeds_Ladders>
