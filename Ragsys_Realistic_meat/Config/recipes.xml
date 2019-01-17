@@ -2,8 +2,8 @@
 
 <!-- This modlets puts meat to normal realist expectations -->
 
-<set xpath="/recipes/recipe[@name='foodBaconAndEggs']/@count">2</set>
-<set xpath="/recipes/recipe[@name='foodBaconAndEggs']/ingredient[@name='foodEgg']/@count">4</set>
+<set xpath="/recipes/recipe[@name='foodBaconAndEggs']/@count">1</set>
+<set xpath="/recipes/recipe[@name='foodBaconAndEggs']/ingredient[@name='foodEgg']/@count">2</set>
 <set xpath="/recipes/recipe[@name='foodBoiledMeat']/ingredient[@name='foodRawMeat']/@count">1</set>
 <set xpath="/recipes/recipe[@name='foodCharredMeat']/ingredient[@name='foodRawMeat']/@count">1</set>
 <set xpath="/recipes/recipe[@name='foodChiliDog']/ingredient[@name='foodRawMeat']/@count">1</set>
