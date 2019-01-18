@@ -1,0 +1,14 @@
+
+<Rags_Zeds_Ladders2>
+
+<!---Ragsy2145 Ladder control
+		
+		This version turns all zombies ladder climbing 'off' and if you want optional
+		choices for individual zombies then use my other modlet that allows full control -->
+	
+	<append xpath="entity_classes/entity_class[contains(@name, 'zombie')]">
+	<property name="CanClimbLadders" value="false"/>
+	</append>
+	
+	
+</Rags_Zeds_Ladders2>
