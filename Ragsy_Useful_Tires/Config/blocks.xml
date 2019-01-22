@@ -1,0 +1,15 @@
+	
+	<Ragsy_Useful_Tires>
+
+	<!-- Chance to get a tire from destroying tyres on the ground 
+	Real tires also have steel and traces of oils in them so chance to get steel and  oil 
+	this modlet makes use of all the random tires in the world other than getting just polymers
+	Full tire can be scrapped for polymers makes it worth hunting down tires -->
+	
+	<append xpath="/blocks/block[@name='tire']">	
+		<drop event="Destroy" name="tire" count="1" prob="0.11" tag="salvageHarvest"/>
+		<drop event="Destroy" name="resourceForgedSteel" count="1" prob="0.075" tag="salvageHarvest"/>
+		<drop event="Destroy" name="resourceOil" count="1" prob="0.15" tag="salvageHarvest"/>
+	</append>
+	
+	</Ragsy_Useful_Tires>
