@@ -18,7 +18,8 @@
 	<property name="Class" value="CropsGrown"/>
 	</append>
 	
-	<!-- Add E back to non HDHQ wild plants -->
+	<!-- Add E back to non HDHQ wild plants if required just uncomment
+	this section
 	
 	<append xpath="/blocks/block[@name='plantedHop3Harvest']">
 	<property name="Class" value="CropsGrown"/>
@@ -59,5 +60,5 @@
 	<append xpath="/blocks/block[@name='plantedCoffee3Harvest']">
 	<property name="Class" value="CropsGrown"/>
 	</append>
-		
+	-->	
 </Pickup_HDHQPlants>
