@@ -2,7 +2,7 @@
 <xml>
 	<ModInfo>
 		<Name value="Ragsy_Ladder_Control" />
-		<Description value="Toggle Zombies can climb ladders or not" />
+		<Description value="full control of which Zombies can climb ladders or not" />
 		<Author value="Ragsy2145"/>
 		<Version value="A17" />
 		<Website value="https://7daystodie.com/forums/forumdisplay.php?61-Game-Mods" />
