@@ -1,0 +1,15 @@
+<Ragsy_Bicycle_Finding>
+
+
+<!-- Millions of Bicycles in the world and not one findable in 7 Days lets fix it for early game stage.
+    You may find more than one bicycle at a time so share with friends, you can change probabilty Here 
+																										||
+																										vv		-->
+
+	<append xpath="/lootcontainers/lootcontainer[@id='66']"><item name="vehicleBicyclePlaceable" prob="0.35"/></append>
+	
+</Ragsy_Bicycle_Finding>
+
+
+
+
