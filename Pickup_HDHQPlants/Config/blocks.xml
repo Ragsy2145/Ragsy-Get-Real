@@ -1,6 +1,7 @@
 <Pickup_HDHQPlants>
 	
 	<!-- Add the A16 <E> action to HDHQ wild plants texture Modlet by DUST2DEATH. 
+		This version is only for 3 HDHQ plants specified and not any vanilla plants.
 		
 		** Warning you will not be able to pickup cotton,goldenrod or chrysanthemum on a 
 		base vanilla A17 installation with this modlet installed it relies completely 
@@ -18,47 +19,6 @@
 	<property name="Class" value="CropsGrown"/>
 	</append>
 	
-	<!-- Add E back to non HDHQ wild plants if required just uncomment
-	this section
 	
-	<append xpath="/blocks/block[@name='plantedHop3Harvest']">
-	<property name="Class" value="CropsGrown"/>
-	</append>
 	
-	<append xpath="/blocks/block[@name='plantedYucca3Harvest']">
-	<property name="Class" value="CropsGrown"/>
-	</append>
-	
-	<append xpath="/blocks/block[@name='plantedAloe3Harvest']">
-	<property name="Class" value="CropsGrown"/>
-	</append>
-	
-	<append xpath="/blocks/block[@name='plantedBlueberry3Harvest']">
-	<property name="Class" value="CropsGrown"/>
-	</append>
-	
-	<append xpath="/blocks/block[@name='plantedPotato3Harvest']">
-	<property name="Class" value="CropsGrown"/>
-	</append>
-	
-	<append xpath="/blocks/block[@name='plantedCorn3Harvest']">
-	<property name="Class" value="CropsGrown"/>
-	</append>
-	
-	<append xpath="/blocks/block[@name='plantedGraceCorn3Harvest']">
-	<property name="Class" value="CropsGrown"/>
-	</append>
-	
-	<append xpath="/blocks/block[@name='plantedSnowberry3Harvest']">
-	<property name="Class" value="CropsGrown"/>
-	</append>
-	
-	<append xpath="/blocks/block[@name='plantedMushroom3Harvest']">
-	<property name="Class" value="CropsGrown"/>
-	</append>
-	
-	<append xpath="/blocks/block[@name='plantedCoffee3Harvest']">
-	<property name="Class" value="CropsGrown"/>
-	</append>
-	-->	
 </Pickup_HDHQPlants>
