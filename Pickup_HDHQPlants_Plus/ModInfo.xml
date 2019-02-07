@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Pickup_HDHQPlants_Plus" />
+		<Description value="Dependancies: HDHQ Plants modlet by DUST2DEATH - Allows A16 press E to pickup all plants" />
+		<Author value="Ragsy2145"/>
+		<Version value="1.0.1" />
+		<Website value="https://7daystodie.com/forums/showthread.php?86145-HDHQ-Textures-Lighting-Environment" />
+	</ModInfo>
+</xml>
