@@ -1,4 +1,4 @@
-<Pickup_HDHQPlantsPlus>
+<Pickup_HDHQPlants_Plus>
 	
 	<!-- Add the A16 <E> action to HDHQ wild plants texture Modlet by DUST2DEATH. 
 		This version also adds pickup to other plants 
@@ -59,4 +59,4 @@
 	<property name="Class" value="CropsGrown"/>
 	</append>
 	
-</Pickup_HDHQPlantsPlus>
+</Pickup_HDHQPlants_Plus>
