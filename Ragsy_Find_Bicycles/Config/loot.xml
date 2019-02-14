@@ -6,7 +6,7 @@
 																										||
 																										vv		-->
 
-	<append xpath="/lootcontainers/lootcontainer[@id='66']"><item name="vehicleBicyclePlaceable" prob="0.35"/></append>
+	<append xpath="/lootcontainers/lootcontainer[@id='66']"><item name="vehicleBicyclePlaceable" prob="0.20"/></append>
 	
 </Ragsy_Bicycle_Finding>
 
