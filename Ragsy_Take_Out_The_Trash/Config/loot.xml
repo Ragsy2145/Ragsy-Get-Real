@@ -11,7 +11,7 @@
 	</lootcontainer>
 	</insertAfter>
 		 
-	<!-- A nicer clean code sample by Royal Deluxe via set attibute after my deliberations yeah thye worked but this is neater lol-->
+	<!-- A nicer clean code sample by Royal Deluxe via set attibute after my deliberations yeah they worked but this is neater lol-->
 	
 	<setattribute xpath="/lootcontainers/lootcontainer[@id='10']" name="destroy_on_close">true</setattribute>
 	
