@@ -1,0 +1,9 @@
+<Ragsy_Take_Out_The_Trash>
+
+	<!-- change loot list id number to stop the small waste bins being destroyed on close as they are on the same lootlist id of 10 as garbage bags, again thanks to KhaineGB
+	for a shorter cleaner code than my original versions -->
+	
+	<set xpath="/blocks/block[@name='cntBin']/property[@name='LootList']/@value">139</set>
+	
+
+</Ragsy_Take_Out_The_Trash>

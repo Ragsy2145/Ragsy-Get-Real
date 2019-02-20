@@ -1,0 +1,20 @@
+<Ragsy_Take_Out_The_Trash>
+
+	<!--Going through garbage bags and foul trash will now destroy them on closing - keep your zombie landscape clean
+		
+		Waste bins are linked to same lootlist id as garbage bags, changed loot id of bins to stop bins being destroyed after looting thanks to KhaineGB for help
+		getting this final part implemented -->
+		 
+	 <insertAfter xpath="/lootcontainers/lootcontainer[@id='116']">
+	<lootcontainer id="139" count="0,2" size="5,3" sound_open="UseActions/open_trashcan" sound_close="UseActions/close_garbage" loot_quality_template="baseTemplate">
+	<item group="junk"/>
+	</lootcontainer>
+	</insertAfter>
+		 
+	<!-- A nicer clean code sample by Royal Deluxe via set attibute after my deliberations yeah thye worked but this is neater lol-->
+	
+	<setattribute xpath="/lootcontainers/lootcontainer[@id='10']" name="destroy_on_close">true</setattribute>
+	
+	
+</Ragsy_Take_Out_The_Trash>
+
