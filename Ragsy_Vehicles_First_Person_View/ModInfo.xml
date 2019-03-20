@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
 	<ModInfo>
-		<Name value="Ragsy_Vehicles_First_Person_V2" />
+		<Name value="Ragsy_Vehicles_First_Person_View" />
 		<Description value="Switch to first person view on vehicles" />
 		<Author value="Ragsy2145"/>
-		<Version value="2.0.0" />
+		<Version value="3.0.0" />
 		<Website value="https://7daystodie.com/forums/showthread.php?106453-Ragsy2145-Modlets-for-A17" />
 	</ModInfo>
 </xml>
