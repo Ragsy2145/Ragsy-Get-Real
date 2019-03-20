@@ -1,0 +1,45 @@
+<Ragsy_Vehicles_First_Person_View>
+
+	<!-- First person modlet for vehicles except the Gyro as may cause motion sickness.
+		This is adjusting the camera views and turnrate and minor changes to vehicle physics to minimise glitching .. Headlight modlet optimised for 1st Person
+		Please remove my other Headlight modlet if you are using this modlet.
+		
+		Note : If you use setting '0' then be prepared as when player is wearing a standard mining helmet or has afro hairstyle
+		you may occasionally see the helmet light or hair style glitch through when riding bikes, normal helmets with lights added are are not as visible.
+		
+		*** Camera Distance Setting Overview ***
+		-0.35,-0.55  Default changed values for bicycle
+		-0,65,-0.55  Default changed values for minibike
+		-1.55,-1.55  Default Changed value for Motorcycle, use if you want to revert back if you try the '0' Setting
+		 -2.2, -2.2  Values for 4x4 if you want to revert back after trying the '0' Setting 
+		 
+		 Please note : If you are using the 7 days mod launcher it will
+		 overide if you are using setting '0' 
+		 
+		 -1.7, -1,7 gives a closer 3rd person view on the motorcycle -->
+
+		
+		 
+	<set xpath="/vehicles/vehicle[@name='vehicleBicycle']/property[@name='cameraDistance' and @value='3, 4.5']/@value">-0.35,-0.55</set>
+	<set xpath="/vehicles/vehicle[@name='vehicleBicycle']/property[@name='cameraTurnRate' and @value='.2, .35']/@value">0.09,0.25</set><!--Optimal sensitivity -->
+	<set xpath="/vehicles/vehicle[@name='vehicleBicycle']/property[@name='tiltAngleMax' and @value='20']/@value">2</set> <!--Minimise camera sway if using Xyth's Helmet Cam Modlet -->
+	
+	<set xpath="/vehicles/vehicle[@name='vehicleMinibike']/property[@name='cameraDistance' and @value='3, 4.5']/@value">-0.65, -0.55</set>
+	<set xpath="/vehicles/vehicle[@name='vehicleMinibike']/property[@name='cameraTurnRate' and @value='.2, .35']/@value">0.09, 0.25</set>  <!--Optimal sensitivity -->
+	<set xpath="/vehicles/vehicle[@name='vehicleMinibike']/property[@class='headlight']/property[@name='bright']/@value">3</set> <!-- 3 optimal for 1st person view otherwise to bright -->
+	<set xpath="/vehicles/vehicle[@name='vehicleMinibike']/property[@name='tiltAngleMax' and @value='20']/@value">2</set> <!--Minimise camera sway if using Xyth's Helmet Cam Modlet -->
+	
+	<set xpath="/vehicles/vehicle[@name='vehicleMotorcycle']/property[@name='cameraDistance' and @value='3.5, 5']/@value">-1.55, -1.55</set> <!-- 0 = Slight overhead view see the spikes-->
+	<set xpath="/vehicles/vehicle[@name='vehicleMotorcycle']/property[@name='cameraTurnRate' and @value='.2, .35']/@value">0.09, 0.25</set> <!--Optimal sensitivity -->
+	<set xpath="/vehicles/vehicle[@name='vehicleMotorcycle']/property[@class='headlight']/property[@name='bright']/@value">3</set><!-- 3 optimal for 1st person view otherwise to bright -->
+	<set xpath="/vehicles/vehicle[@name='vehicleMotorcycle']/property[@name='tiltAngleMax' and @value='20']/@value">2</set><!--Minimise camera sway if using Xyth's Helmet Cam Modlet -->  
+	
+	<set xpath="/vehicles/vehicle[@name='vehicle4x4Truck']/property[@name='cameraDistance' and @value='5.5, 7']/@value">-2.2, -2.2</set> <!-- 0 = in car view see hop force note below --> 
+	<set xpath="/vehicles/vehicle[@name='vehicle4x4Truck']/property[@name='cameraTurnRate' and @value='.2, .35']/@value">0.07, 0.13</set> <!--Optimal sensitivity -->
+	<set xpath="/vehicles/vehicle[@name='vehicle4x4Truck']/property[@name='hopForce' and @value='0']/@value">3</set> <!-- at 0 view cameraDistance use hop by pressing c to correct view -->
+	<set xpath="/vehicles/vehicle[@name='vehicle4x4Truck']/property[@class='headlight']/property[@name='bright']/@value">3</set> <!-- 3 optimal for 1st person view otherwise to bright -->
+	<set xpath="/vehicles/vehicle[@name='vehicle4x4Truck']/property[@name='steerRate' and @value='130']/@value">210</set> <!-- minimise drifting in first person -->
+	
+		
+</Ragsy_Vehicles_First_Person_View>
+	
