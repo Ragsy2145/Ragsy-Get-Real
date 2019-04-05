@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
 	<ModInfo>
-		<Name value="Ragsy2145_realistic-Meat" />
+		<Name value="Ragsy2145_Realistic_Meat" />
 		<Description value="Makes meat usage more reasonable as 5 is way too much for bacon n eggs, grilled or boiled meats" />
 		<Author value="Ragsy2145"/>
-		<Version value="1.00" />
+		<Version value="1.0.0" />
 		<Website value="https://7daystodie.com/forums/forumdisplay.php?61-Game-Mods" />
 	</ModInfo>
 </xml>
