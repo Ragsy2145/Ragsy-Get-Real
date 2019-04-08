@@ -10,7 +10,7 @@
 	<set xpath="entity_classes/entity_class[starts-with(@name, 'zombie') and not(contains(@name, 'animal'))]/property[@name='MoveSpeedPanic']/@value">0.6</set>
 
 	<!-- Detection by zombies all changes here -->
-	<set xpath="entity_classes/entity_class[starts-with(@name, 'zombie') and not(contains(@name, 'animal'))]/property[@name='NoiseAlertThreshold']/@value">-200</set>
+	<set xpath="entity_classes/entity_class[starts-with(@name, 'zombie') and not(contains(@name, 'animal'))]/property[@name='NoiseAlertThreshold']/@value">-20</set>
 	<set xpath="entity_classes/entity_class[starts-with(@name, 'zombie') and not(contains(@name, 'animal'))]/property[@name='SmellAlertThreshold']/@value">10</set>
 	<set xpath="entity_classes/entity_class[starts-with(@name, 'zombie') and not(contains(@name, 'animal'))]/property[@name='SightRange']/@value">10</set>
 	<set xpath="entity_classes/entity_class[starts-with(@name, 'zombie') and not(contains(@name, 'animal'))]/property[@name='MaxViewAngle']/@value">45</set>
