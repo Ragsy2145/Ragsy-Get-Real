@@ -1,0 +1,17 @@
+<Ragsy_Zombie_Replacements>
+
+	<!-- Adapted to my modlet requirements via REV6:78 Reality check modlets which can be found here https://7daystodie.com/forums/showthread.php?100533-REV6-7-8-s-REALITY-CHECK
+		My personal thoughts are wolves,bears,dogs,vultures could be viable in the Apocalypse but not glowy screamy or super strength versions.
+		Snakes i hate so out for me. -->
+	
+	<set xpath="/entitygroups/entitygroup[contains(@name, '')]/entity[contains(@name, 'zombieScreamer')]/@name">zombieMarlene</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, '')]/entity[@name='animalZombieBear']/@name">animalBear</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, '')]/entity[@name='animalSnake']/@name">animalChicken</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, '')]/entity[contains(@name, 'zombieFatCop')]/@name">zombieFatHawaiian</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, '')]/entity[contains(@name, 'zombieSpider')]/@name">zombieSoldier</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, '')]/entity[contains(@name, 'Feral')]/@name">zombieMaleHazmat</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, '')]/entity[@name='animalZombieVultureRadiated']/@name">animalRabbit</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, '')]/entity[contains(@name, 'Radiated')]/@name">zombieBiker</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, '')]/entity[@name='animalDireWolf']/@name">animalStag</set>
+	
+</Ragsy_Zombie_Replacements>
