@@ -1,19 +1,23 @@
 <Ragsy_Classic_Style_Zombies>
     
 	<!-- Adds perk for headshot system and this is also PVP friendly - Original Code credits to Spider (JZ_Mod)
-		 Adjusted Damage modifiers to suit this modlet , Modifiers also apply to guns but far more suitable for melee weapons -->
+		V2.0 Adjusted Damage modifiers to suit this modlet and added percentage chance to dismember heads with small percentage chance of blowing off arms /legs  -->
 	
 	
 	
 	<insertAfter xpath="progression/perks/perk[@name='perkFromTheShadows']" >
 	<perk name="_HeadShotSystem" parent="skillStealth" min_level="1" max_level="1" base_skill_point_cost="0" cost_multiplier_per_level="1" name_key="Head Shot mode for Zombies" desc_key="All player damage is increased only on zombie heads and decreased only on zombies bodies" icon="ui_game_symbol_head_shot">
 	<effect_group>	
-			<requirement name="EntityTagCompare" target="other" tags="zombie"/>
-			<passive_effect name="DamageModifier" operation="perc_add" value="7" level="1" tags="head"/>
-			<passive_effect name="DamageModifier" operation="perc_add" value="-70" level="1" tags="upperbody"/>
-			<passive_effect name="DamageModifier" operation="perc_add" value="-70" level="1" tags="lowerbody"/>
-	</effect_group>
-	</perk>
-	</insertAfter>
-	
+			<requirement name="EntityTagCompare" tags="zombie" has_all_tags="false" target="other"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="0.2" level="1" tags="head"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="0.07" level="1" tags="upperbody"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="0.07" level="1" tags="lowerbody"/>		
+			<requirement name="EntityTagCompare" target="other" tags="smallHeaded" invert="true"/>
+			<passive_effect name="DismemberChance" operation="base_add" value="0.01">
+			
+			</passive_effect>
+			</effect_group>
+			</perk>
+			</insertAfter>
+			
 </Ragsy_Classic_Style_Zombies>
