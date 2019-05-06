@@ -9,9 +9,9 @@
 	<perk name="_HeadShotSystem" parent="skillStealth" min_level="1" max_level="1" base_skill_point_cost="0" cost_multiplier_per_level="1" name_key="Head Shot mode for Zombies" desc_key="All player damage is increased only on zombie heads and decreased only on zombies bodies" icon="ui_game_symbol_head_shot">
 	<effect_group>	
 			<requirement name="EntityTagCompare" tags="zombie" has_all_tags="false" target="other"/>
-			<passive_effect name="DamageModifier" operation="perc_add" value="0.2" level="1" tags="head"/>
-			<passive_effect name="DamageModifier" operation="perc_add" value="0.07" level="1" tags="upperbody"/>
-			<passive_effect name="DamageModifier" operation="perc_add" value="0.07" level="1" tags="lowerbody"/>		
+			<passive_effect name="DamageModifier" operation="perc_add" value="0.7" level="1" tags="head"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="0.2" level="1" tags="upperbody"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="0.2" level="1" tags="lowerbody"/>		
 			<requirement name="EntityTagCompare" target="other" tags="smallHeaded" invert="true"/>
 			<passive_effect name="DismemberChance" operation="base_add" value="0.01">
 			
