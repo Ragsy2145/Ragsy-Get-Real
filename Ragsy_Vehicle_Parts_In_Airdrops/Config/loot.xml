@@ -1,0 +1,14 @@
+
+<Configs>
+
+	<!-- This small modlet was requested in forum it adds chances of vehicle parts to the Air-drops -->
+
+	<append xpath="/lootcontainers/lootcontainer[@id='34']">
+        <item group="bicycleParts" prob="1"/>
+		<item group="minibikeParts" prob=".8"/>
+		<item group="motorcycleParts" loot_prob_template="probTemplate1.0"/>
+		<item group="4x4Parts" loot_prob_template="probTemplate0.75"/>
+		<item group="gyroCopterParts" loot_prob_template="probTemplate0.5"/>
+	</append>
+
+</Configs>
