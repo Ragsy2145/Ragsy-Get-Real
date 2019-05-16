@@ -1,7 +1,7 @@
 <Ragsy_Classic_Style_Zombies>
     
 	<!-- Adds perk for headshot system and this is also PVP friendly - Original Code credits to Spider (JZ_Mod)
-		V2.0 Adjusted Damage modifiers to suit this modlet and added percentage chance to dismember heads with small percentage chance of blowing off arms /legs  -->
+		V2.0 Adjusted Damage modifiers to suit this modlet percentage chance to dismember heads with small percentage chance of blowing off arms /legs  -->
 	
 	
 	
@@ -13,8 +13,6 @@
 			<passive_effect name="DamageModifier" operation="perc_add" value="0.2" level="1" tags="upperbody"/>
 			<passive_effect name="DamageModifier" operation="perc_add" value="0.2" level="1" tags="lowerbody"/>		
 			<requirement name="EntityTagCompare" target="other" tags="smallHeaded" invert="true"/>
-			<passive_effect name="DismemberChance" operation="base_add" value="0.01">
-			
 			</passive_effect>
 			</effect_group>
 			</perk>
