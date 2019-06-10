@@ -2,7 +2,7 @@
 <xml>
 	<ModInfo>
 		<Name value="Random_Safe_States"/>
-		<Description value="With new game start you can find Random open or empty safes"/>
+		<Description value="Adds Possibilities of finding Random open or empty safes"/>
 		<Author value="Ragsy2145"/>
 		<Version value="1.0.0"/>
 	</ModInfo>
