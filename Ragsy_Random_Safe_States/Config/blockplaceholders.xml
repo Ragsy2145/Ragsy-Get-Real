@@ -1,0 +1,51 @@
+<configs>
+
+
+		<!-- Probabilities for each condition of safe to spawn in POI's-->
+		
+	<set xpath="/blockplaceholders/placeholder[@name='cntWallSafeRandomLootHelper']">
+	<block name="cntWallSafeInsecure" prob="0.4"/>
+	<block name="WallSafe Looted" prob="0.4"/> <!-- Empty in POI's-->
+	<block name="cntWallSafe" prob="0.2"/>
+	</set>
+
+	<append xpath="/blockplaceholders">	
+
+	<placeholder name="cntGunSafeRandomLootHelper">
+	<block name="cntGunsafeInsecure" prob="0.3"/>
+	<block name="GunSafe Looted" prob="0.4"/> <!-- Empty in POI's-->
+	<block name="cntGunSafe" prob="0.3"/>
+	</placeholder>
+	
+		
+	<placeholder name="cntWallSafeBreweryRandomLootHelper">
+	<block name="cntWallSafeBrewery" prob="0.6"/>
+	<block name="cntWallSafeBreweryInsecure" prob="0.2"/>
+	<block name="Brewery WallSafe Looted" prob="0.2"/> <!-- Empty in POI's-->
+	</placeholder>
+	
+	<placeholder name="cntWallSafeShamwayRandomLootHelper">
+	<block name="cntWallSafeShamway" prob="0.6"/>
+	<block name="cntWallSafeShamwayInsecure" prob="0.2"/> 
+	<block name="Shamway WallSafe Looted" prob="0.2"/> <!-- Empty in POI's-->
+	</placeholder>
+	
+	<placeholder name="cntDeskSafeRandomLootHelper">
+	<block name="cntDeskSafe" prob="0.4"/>
+	<block name="cntDeskSafeInsecure" prob="0.3"/>
+	<block name="DeskSafe Looted" prob="0.3"/> <!-- Empty in POI's-->
+	</placeholder>
+	</append>
+	
+	<!-- Add Spawn Probabilities to wasteland -->
+	<append xpath="/blockplaceholders">
+	<placeholder name="cntWastelandRandomLootHelper">
+		<block name="cntDeskSafeInsecure" prob="0.01"/>
+		<block name="DeskSafe Looted" prob="0.01"/> <!-- Empty in Biome's-->
+	</placeholder>
+		
+	</append>
+	
+		
+</configs>
+

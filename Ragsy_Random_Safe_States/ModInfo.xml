@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Ragsy_Random_Safe_States"/>
+		<Description value="No open safe's in the apocalypse now fixed adds possibilites of finding random open or looted safes"/>
+		<Author value="Ragsy2145"/>
+		<Version value="2.0.0"/>
+	</ModInfo>
+</xml>
