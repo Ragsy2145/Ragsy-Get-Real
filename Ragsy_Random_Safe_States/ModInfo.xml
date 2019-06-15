@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<xml>
-	<ModInfo>
-		<Name value="Random_Safe_States"/>
-		<Description value="Adds Possibilities of finding Random open or empty safes"/>
-		<Author value="Ragsy2145"/>
-		<Version value="1.0.0"/>
-	</ModInfo>
-</xml>
