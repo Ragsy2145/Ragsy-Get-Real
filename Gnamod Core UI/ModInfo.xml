@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+  <ModInfo>
+    <Name value="Gnamod UI"/>
+    <Description value="
+Words of the Author:
+Hello and thanks for trying out my Mod(s) for 7 Days to Die. Online I am known by the name Haidr'Gna and have been making mods for this game for several years now starting in A14 with the name Gnamod for my mod collection. In A15 the mod became more well known and was also streamed and during A16 the mod was well known. But now we are at A17 and the game has changed a bit so all is new again. One thing that we have now is Xpath scripts that can be made instead of doing direct edits to the game files. This means many more mods can be easily installed and combined. Still Gnamod remains an overhaul mod and will eventually touch every part of the core game. But due to the Xpath being supported the mod can be easily installed in the game's Mods folder and optional modes when I make them for A17 (Such as Necropolis, Horde Mode and Nomad Mode) will likely be Xpath mods that can be applied alongside the base Xpath mod of the overhaul. The base mod will be called 'Gnamod Survival' which I think is a more fitting name than base. Still simple and yet conveys the meaning of the mod which is all about making survival harder. I will make small logs here per release I make to describe what has been added in it, eventually by 1.0 everything should be covered in this document.
+
+====================Version 0.1====================
+This version is all about Entities, and by that I mean Zombies and Animals mainly. It contains scripts mostly to Entityclasses.xml, Entitygroups.xml, Spawning.xml, Gamestages.xml and some additions to items (hands) and buffs (specific zombie spawn buffs). 
+
+Base Mod
+- Over 3000 entities, which are 2/3 still placeholders for future plans that will get different skins.
+- Zombies all extend from one master into several specific class masters that then extend into usage templates for specific purposes. This means that there is a distinction between a zombie for: World, Horde, Sleeper and Bloodmoon. With each having classes such as regular, climber, crawler, feral, boss, puker, radiated, radclimber, radpuker, volatile and bomber.
+- Animals that extend from one master into several specific class masters, each having 5 differently sized versions available. There are timid animals such the chicken, pig and bunny that always flee. Neutral animals such as the board, stag and doe that flee but when attacked will fight back. Hostile animals such as the bear, dire boar and snake that will attack if they see you. There are also wolves and dire wolves that will fight whatever they see except other wolves (since wolves hunt in packs).
+- With the new event system came new ways to randomize, all zombies except climbers and crawlers have a random walktype applied after they spawn. They also have a cascading system that first creates a random base health, damage bonus and speed bonus and then depending on classes, templates and the final type of zombie (like it being Biker Dave). All of these affect the total and thus the final zombies you encounter are different every time. They even have different sizes making certain ones like bosses stand out a bit more.
+- Randomized animal stats as well in a similar manner though less complex since there are not as many of them.
+- Completely overhauled the gamestage system. Wandering hordes now come in stages, meaning not ever zombie is spawned immediatly, some can come later in a 2nd wave or other fun stuff could happen. Sleeper lists have been redone as well as the scouts (which now include both Screaming Anna and the Spider which now has been named Axel). 
+- Biome spawning restored to Gnamod level, which means you will see more animals and zombies daily in the world.
+
+====================Version 0.2====================
+Version 0.2 adds support for Horde Mode and brings back functionality for it to work in its most basic form. It does not include any Gnamod specific items or building materials/blockshapes yet.
+
+Base Mod
+- Adjustments to entities, mainly bringing HP down and increasing chance to get loot rewards. Doubled xp gains.
+- Blocks required to make Horde Mode function, beacon pieces, terrain blocks and some modified sandbag blocks for the wasteland beacon.
+- Items for the beacon explosion to be possible.
+- Lootcontainers for the beacon chest and for the coin drops on zombies.
+- Materials required to make the beacon function.
+- Alterations to progression to allow a more granular secret stash for traders. Int now adds 50 per level to it and better barter 100 per level. 
+- Quest alteration: basic quest will be skipped automatically and awards some extra items.
+- Trader.xml overhaul to the core Gnamod way. Not complete and does not include to much custom yet but based on A16 setup to allow use of the secret stash to progress and adds groups for the beacon.
+
+Horde Mode
+- Added Horde Mode modlet to the mix. This modlet is applied after the base mod and requires the base mod to function.
+- Comes with a different intro screen and logo to tell that Horde Mode has been applied.
+- Biome flooring altered so digging down is limited to the first 5 blocks.
+- Temporary xpath to make all master blocks see-through for zombies to enable Horde Mode mechanics.
+- Xpath to make sure all zombies drop specific Horde Mode bags rather than the standard loot bags.
+- Alternative Gamestages file for the Hordes.
+- Alternative starting quest to hand out a temporary set of starting items and dukes until the starterkits are back in.
+- Alternative Spawning file to enable the basic world spawning for Horde Mode and horde waves.
+- Comes with 2 POIs that need to be manually added to the game's POI folder to make horde mode work.
+- Comes with 5 Worlds (one for each biome) with a central beacon and not much else. These are most likely placeholders for more interesting maps when the game can generate better maps.
+
+====================Version 0.3====================
+Version 0.3 adds in the support for reskinning zombies with a unity package, basic road marking blocks for POI building and a set of basic icons which are mostly incomplete still.
+
+Base Mod
+- Further adjusted all entities, behavior, statistics, amount of templates and zombies, spawning numbers. Basically a rebalance of the framework so it becomes more playable. 
+- Basic walkers come in 4 varieties, with slight variation of base HP, but mostly so that a more room exists for skins that are encountered frequently.
+- Added unity package that includes skins (materials) for each zombie. Most are still just the same as the base, but in the future I will add retinted versions of any. 
+- The Package does include Mumpfy's skins he allowed me to use for the mod and reskins for Arlene and some prototype 'Like A Boss' biker skin.
+- New Blocks (found in creative only with RM_). These are a variety of road markings, long, short, dashed lines, zebra's and sharkteeth. These currently have only a basic material, but are used in the Gnamod Prefabs for the Gnamod City/Necropolis builds. 
+- Item Icons for the new blocks, as well as some in development ones, icons for forge materials (for this version, next version Smelting will no longer use any unit items).
+- Added some base chance for dismemberment and a chance to recieve a short lived critical bonus that increases the dismember chance and base damage. (Also sometimes fires on harvesting, but I think that is ok for now).
+- Arrows have a base chance to cause bleeding now
+- Improved manual install package should make installing easier, unzip in the base game folder to install all files in their correct places.
+
+Horde Mode
+- Reduced heat generation of the beacon quite a lot as a baseline to test horde buildup. Probably will be moving to lower freqency with bigger waves rather than high frequency with small waves.
+
+====================Version 0.4====================
+Version 0.4 focuses mainly on the UI and will bring some optimizations to the unity package as well as introducing some specific Gnamod biomes, decorations and trees to the mix. Most time went into the start of a completer UI overhaul that will also function stand-alone. This version also brings a mod folder restructure placing everything that is core into the Gnamod Base mod folder and everything specific to a mod in it's own. This version will also be available as the first unstable release on the Mod Launcher by sphereii.
+
+Base Mod
+- All assets and core functionality will be placed in here. Any download will require this to work and include it. In the launcher this will be the base installation and adding modlets on top to change different modes.
+- Added a set of new trees (conifers). These will be included into at least one new biome in this version and later be used when doing a full world overhaul in more biomes.
+- Added new rocks, stones, boulders and bushes to add to biomes. These will be mixed with existing ones into future biomes. More will be added in future versions as well.
+- Added a set of arrowheads, arrows, bolts and icons to the game. These range from scrap, bone, stone, iron, steel, stainless and titanium. Also added items for wood and fiber shafts, and plastic fletches. These will replace existing arrows and become a tiered system for bow/xbow ammo.
+- Added some new chicken skins, now a light brown, black and white chicken.
+
+Horde Mode
+- Mo Changes
+
+Survival
+- Moved to it's own folder but is still mostly using the base mod since they are still the same. 
+
+UI
+- Added a new UI modlet to the mix that overhauls the entire ingame UI.
+- Changed the backpack to have more slots (11x8) and incorporate the toolbar slots on the top (so shows 12x8 slots, the total amount a person could have on him).
+- Changed the toolbar to display on the side in a new style, removed xp bar.
+- Changed HP/Stamina bars to a new style, stamina is green colored. 
+- Changed the compass to incorporate the stealth bar, added some stats to the clock (altitude and actual biome temp). Added red marker for center of compass.
+- Changed the crafting list menu to incorporate the output slots on the right, have its list presented as 2 columns so more is visible at once.
+- Changed the recipe window to allow up to 10 ingredients displayed, in tw columns. Condensed the display.
+- Changed the workstations windows to have up to 10 tools, 10 fuel and 10 output items. Planned is to have specialized workstations with more or less slots but with the same style.
+- Changed the forge input window to allow 3 items to be smelted at once (more not possible without a dll change). Condensed the display of melted items.
+- Changed the creative menu to display a lot more items (15x10). Slots are smaller and stack information removed as it is not needed.
+- Changed the item information window and modify window to support 10 mod slots for items, improved the view and hide slots when description is displayed.
+- Changed the character window to display bigger and keep the character visible even if stats are displayed (they are projected around him).
+- Changed the buff display to tell the effects of a buff and displays 10 at once per page. Not all effects seem properly supported yet, in future will see if this can be localized to not use the incode names for effects. Might not be a thing for the vanilla version though.
+- Changed the loot and vehicle storage windows to support up to 15x10 slots. This does not alter the vanilla slot size, but people could alter those to be bigger if needed within these limits.
+- Changed the vehicle info display to be in line with the item info display. Vehicles also support 10 mods, once vehicle mods actually work though :).
+- Changed the quest reward window to properly work with the changes and can have up to 7 reward items (up from 5).
+- Note that the slot increases are not actual increases to gameplay limits for vanilla or any other mod you might add this too. They are just higher max possible, so you will need to include xpath or mods to make the slots, unlocked backpack slots, storage slots etc for things higher.
+
+
+
+Special Thanks:
+- The Fun Pimps for making this awesome game and allowing and facilitating us modders to fiddle around with it and change it up.
+- Guppycur's Modding community for helping me with questions and distracting me when I should have been modding :)
+- Mumpfy for allowing me to include his work on zombie skins into the mod and for supplying me with an awesome font and logo idea to use for the main menu.
+- DUST2DEATH for helping me and teaching me tricks he learned from manu_x32 to make extracted assets look like they should. 
+- Like A Boss (Twitch Streamer) for spreading the world while still in development and helping out by building POIs and allowing me to use some of his icons on zombies.
+- Ragsy for sparring with me on modding and helping out with testing the UI on a higher resolution screen.
+- Loyal Gnamod fans that kept asking if a new A17 version was still coming. :)
+- Max Fox Gaming and Madam Wolfie for promoting my work and being supportive.
+- Many others that have been helping or giving out ideas. 
+
+License and Use:
+- This mod is free to play by whoever owns 7 Days to Die. This also means running it on a private or rented server or hosting a game for friends.
+- Assets found in the Gnamod.unity3d contain the work of The Fun Pimps, Mumpfy, used unity packages and myself, therefore it is NOT allowed to re-use this in any way without permission from me and/or the original author of the content.
+- You are free to modify the contents of the mod to your own needs, like adjusting spawn chances or other stats. If you host a server with altered contents please let people know you are running a non-standard version of the mod.
+- You are free to use idea's from this mod in your own locally used mods or on hosted games for friends. When using ideas from this mod for your own mod you want to release to the public please ask my permission to do so if the idea is clearly unique to this mod. This is usually no issue as long as you give credit for it and thus also help promote my work.
+- You are NOT allowed to take the code from this mod to add to another mod in any way without asking my explicit permission for it. Using similar code is fine like in the previous bullet, but taking the complete code or parts of the code and adding them to your mod is not. There is no exception to this, if I do not give you permission you will have to write your own code. Gnamod is intended to be used as is and not be added to other mods. If some other mod would really fit well with this I will probably add it or a similar feature at some stage of development.
+- The Fun Pimps are ultimatly the true owners of this mod as it only works with their game and is only possible because they support the modding community of their game.
+
+Links:
+Zombie Skin mod by Mumpfy: https://7daystodie.com/forums/showthread.php?104836-NEW-ZOMBIE-TEXTURES-Mumpfy
+Like A Boss Channel: https://www.twitch.tv/like_a_boss2016
+
+Installation:
+- Navigate to the game's installation folder usually (C:\Program Files (x86)\Steam\steamapps\common\7 Days To Die)
+- Either Extract the contents of the zip directly here or extract them somewhere else and then copy them over here. 
+- Make sure the entire contents of each zip you install goes into the base folder.
+- Start the game, if you done it correctly a different background image and Gnamod logo will appear in the menu.
+
+Tips
+- If you run into perfomance issue with this game on the vanilla game (not modded) try using this command in the console (will turn off postprocessing in 17.3 for increased perfomance): gfx pp enable 0
+- Set the game to default settings when running any Gnamod mod. If you find it still to tough you can decrease the difficulty or give yourself more edge by altering some settings.
+
+Unity Packages Used
+- https://assetstore.unity.com/packages/3d/vegetation/trees/conifers-botd-142076
+- https://assetstore.unity.com/packages/3d/props/exterior/hq-rock-pack-free-83388
+- https://assetstore.unity.com/packages/3d/props/exterior/stones-40329
+- https://assetstore.unity.com/packages/3d/props/exterior/hq-big-rock-50759
+- https://assetstore.unity.com/packages/3d/vegetation/plants/yughues-free-bushes-13168
+"/>
+    <Author value="Haidr'Gna"/>
+    <Version value="0.4"/>
+    <Website value="https://7daystodie.com/forums/showthread.php?119858-Gnamod-UI"/>
+</ModInfo>
+</xml>
