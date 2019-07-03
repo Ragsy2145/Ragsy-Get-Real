@@ -15,9 +15,9 @@
 	</placeholder>
 
 	<placeholder name="cntGunSafe">
-	<block name="cntGunsafeInsecure" prob="0.7"/>
-	<block name="GunSafe Looted" prob="0.2"/> <!-- Empty in POI's-->
-	<block name="cntGunSafe" prob="0.1"/>
+	<block name="cntGunsafeInsecure" prob="0.5"/>
+	<block name="GunSafe Looted" prob="0.3"/> <!-- Empty in POI's-->
+	<block name="cntGunSafe" prob="0.2"/>
 	</placeholder>
 	
 		
