@@ -1,0 +1,188 @@
+<Random_Safe_States> 
+
+	<!-- Removed to get rid of multi block DIM's spawning issue-->
+	<remove xpath="/blocks/block[@name='cntGunSafeInsecure']"/>
+	<remove xpath="/blocks/block[@name='cntGunSafe']"/>
+	
+	
+	<!-- Add new Blocks -->
+	<append xpath="/blocks">
+	
+	<block name="cntGunSafe">
+	<property name="Group" value="Building"/>
+	<property name="Class" value="SecureLoot"/>
+	<property name="DisplayType" value="blockHardenedMulti" />
+	<property name="Material" value="Mmetal_hard"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="Entities/LootContainers/gun_safePrefab"/>
+	<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="LootList" value="42"/>
+	<property name="DowngradeBlock" value="cntGunsafeInsecure"/>
+	<property class="RepairItems"> <property name="resourceForgedIron" value="20"/> </property>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="EconomicValue" value="690"/>
+	<property name="FilterTags" value="floot,ffurniture"/>
+	</block>
+	
+	<block name="cntGunsafeInsecure">
+	<property name="CreativeMode" value="None"/>
+	<property name="CustomIcon" value="cntGunSafe"/>
+	<property name="DisplayType" value="blockHardenedMulti" />
+	<property name="Material" value="Mmetal_hard"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="Entities/LootContainers/gun_safePrefab"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="42"/>
+	<property class="RepairItems"> <property name="resourceForgedIron" value="15"/> </property>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="" count="0" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceForgedIron" count="1,4" prob="0.1" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceForgedSteel" count="0,2" prob="0.05" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5,15" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="resourceSpring" count="1,5" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMechanicalParts" count="1,5" tag="salvageHarvest"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="FilterTags" value="floot,ffurniture"/>
+	</block>
+	
+	<block name="GunSafe Looted"> <!--no loot versions -->
+	<property name="CreativeMode" value="None"/>
+	<property name="CustomIcon" value="cntGunSafe"/>
+	<property name="DisplayType" value="blockHardenedMulti" />
+	<property name="DisplayInfo" value="Name" />
+	<property name="Material" value="Mmetal_hard"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="Entities/LootContainers/gun_safePrefab"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="3"/>
+	<property class="RepairItems"> <property name="resourceForgedIron" value="15"/> </property>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="" count="0" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceForgedIron" count="1,4" prob="0.1" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceForgedSteel" count="0,2" prob="0.05" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5,15" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="resourceSpring" count="1,5" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMechanicalParts" count="1,5" tag="salvageHarvest"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="FilterTags" value="floot,ffurniture"/>
+	</block>
+		
+	<block name="WallSafe Looted"><!--no loot versions -->
+	<property name="CreativeMode" value="None"/>
+	<property name="CustomIcon" value="cntWallSafe"/>
+	<property name="DisplayType" value="blockHardened" />
+	<property name="DisplayInfo" value="Name" />
+	<property name="Material" value="Mmetal_hard"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
+	<property name="Mesh" value="models"/>
+	<property name="Model" value="LootContainers/safe_wall" param1="main_mesh"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="3"/>
+	<property class="RepairItems"> <property name="resourceForgedIron" value="10"/> </property>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="" count="0" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceForgedIron" count="1,2" prob="0.1" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceForgedSteel" count="0,2" prob="0.05" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5,15" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="resourceSpring" count="1,2" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMechanicalParts" count="1,3" tag="salvageHarvest"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="FilterTags" value="floot,ffurniture"/>
+	</block>
+	
+	<block name="DeskSafe Looted"> <!--no loot versions -->
+	<property name="CreativeMode" value="None"/>
+	<property name="CustomIcon" value="cntDeskSafe"/>
+	<property name="DisplayType" value="blockHardened" />
+	<property name="DisplayInfo" value="Name" />
+	<property name="Material" value="Mmetal_hard"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
+	<property name="Mesh" value="models"/>
+	<property name="Model" value="LootContainers/safe_desk" param1="main_mesh"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="3"/>
+	<property name="ImposterExchange" value="imposterCTREighth" param1="18"/>
+	<property class="RepairItems"> <property name="resourceForgedIron" value="10"/> </property>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="" count="0" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceForgedIron" count="1,2" prob="0.1" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceForgedSteel" count="0,2" prob="0.05" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5,15" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="resourceSpring" count="1,2" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMechanicalParts" count="1,3" tag="salvageHarvest"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="FilterTags" value="floot,ffurniture"/>
+	</block>
+
+	<block name="BreweryWallSafe Looted"><!--no loot versions -->
+	<property name="CreativeMode" value="None"/>
+	<property name="CustomIcon" value="cntWallSafe"/>
+	<property name="DisplayType" value="blockHardened" />
+	<property name="DisplayInfo" value="Name" />
+	<property name="Material" value="Mmetal_hard"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
+	<property name="Mesh" value="models"/>
+	<property name="Model" value="LootContainers/safe_wall" param1="main_mesh"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="3"/>
+	<property class="RepairItems"> <property name="resourceForgedIron" value="10"/> </property>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="" count="0" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceForgedIron" count="1,2" prob="0.1" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceForgedSteel" count="0,2" prob="0.05" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5,15" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="resourceSpring" count="1,2" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMechanicalParts" count="1,3" tag="salvageHarvest"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="FilterTags" value="floot,ffurniture"/>
+	</block>
+	
+	<block name="ShamwayWallSafe Looted "><!--no loot versions -->
+	<property name="CreativeMode" value="None"/>
+	<property name="CustomIcon" value="cntWallSafe"/>
+	<property name="DisplayType" value="blockHardened" />
+	<property name="Material" value="Mmetal_hard"/>
+	<property name="DisplayInfo" value="Name" />
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
+	<property name="Mesh" value="models"/>
+	<property name="Model" value="LootContainers/safe_wall" param1="main_mesh"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="3"/>
+	<property class="RepairItems"> <property name="resourceForgedIron" value="10"/> </property>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="" count="0" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceForgedIron" count="1,2" prob="0.1" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceForgedSteel" count="0,2" prob="0.05" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5,15" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="resourceSpring" count="1,2" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMechanicalParts" count="1,3" tag="salvageHarvest"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="FilterTags" value="floot,ffurniture"/>
+	</block>
+	</append>
+	
+</Random_Safe_States>
