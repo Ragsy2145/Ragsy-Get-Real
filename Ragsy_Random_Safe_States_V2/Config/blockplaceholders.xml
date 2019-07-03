@@ -8,7 +8,7 @@
 	
 	
 	<append xpath="/blockplaceholders">		
-	<placeholder name="cntWallSafeRandomLootHelper">
+	<placeholder name="cntWallSafe">
 	<block name="cntWallSafeInsecure" prob="0.6"/>
 	<block name="WallSafe Looted" prob="0.3"/> <!-- Empty in POI's-->
 	<block name="cntWallSafe" prob="0.1"/>
