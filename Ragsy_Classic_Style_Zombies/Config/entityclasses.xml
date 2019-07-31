@@ -15,10 +15,18 @@
 	<set xpath="/entity_classes/entity_class[starts-with(@name, 'zombie') and not(contains(@name, 'animal'))]/property[@name='SightRange']/@value">10</set>
 	<set xpath="/entity_classes/entity_class[starts-with(@name, 'zombie') and not(contains(@name, 'animal'))]/property[@name='MaxViewAngle']/@value">45</set>
 	
-	
+	<!-- This setting makes the Zombies put down their calculators and make more of a direct path to you -->
+	<set xpath="/entity_classes/entity_class/property[@name='AIPathCostScale']/@value">0.0,0.1</set>
 
 	<!-- Zombies are not able to climb ladders -->
 	<set xpath="/entity_classes/entity_class[contains(@name, 'zombie')]/property[@name='CanClimbLadders']/@value">false</set>
 
 
 </Ragsy_Classic_Style_Zombies>
+
+
+     <!-- how well lit you have to be for the zombie to see you at min,max range 
+	<set xpath="entity_classes/entity_class[starts-with(@name, 'zombie') and not(contains(@name, 'animal'))]/property[@name='SightLightThreshold']/@value">-3, 300</set>
+	<property name="DismemberMultiplierArms" value="1"/>
+	<property name="DismemberMultiplierLegs" value="1"/> 
+	-->

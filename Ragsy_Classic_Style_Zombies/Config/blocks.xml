@@ -1,0 +1,8 @@
+<configs>
+
+
+	<remove xpath="/blocks/block[contains(@name, 'pike')]/property[@name='Path']" />
+	<set xpath="/blocks/block[contains(@name, 'pike')]/property[@name='Collide']/@value">melee</set>
+	
+	
+</configs>
