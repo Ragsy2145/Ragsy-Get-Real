@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+  <ModInfo>
+    <Name value="Gnamod Core UI"/>
+    <Description value="A18 Version of the Gnamod Core UI. It streamlines the UI and offers some quality of life improvements."/>
+    <Author value="HaidrGna"/>
+    <Version value="0.6.0"/>
+    <Website value=""/>
+</ModInfo>
+</xml>
