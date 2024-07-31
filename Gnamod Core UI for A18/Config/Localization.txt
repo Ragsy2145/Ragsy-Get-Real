@@ -1,5 +1,0 @@
-﻿Key,Source,Context,Changes,English,French,German,Klingon,Spanish,Polish
-xuiUnlockedBy,CraftingInfo,XUI,GnamodUI,"Unlocked By:",,,,,
-xuiEmptyModSlot,AssembleWindow,XUI,GnamodUI,"Empty Mod Slot",,,,,
-xuiEmptyVehicleSlot,AssembleWindow,XUI,GnamodUI,"Empty Vehicle Slot",,,,,
-xuiEmptyCosmeticSlot,AssembleWindow,XUI,GnamodUI,"Empty Cosmetic Slot",,,,,

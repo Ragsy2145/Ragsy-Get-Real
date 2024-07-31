@@ -1,4 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<entity_classes>
-<set xpath="*//passive_effect[@name='BagSize']/@value">88</set>
-</entity_classes>
